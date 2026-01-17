@@ -21,11 +21,8 @@ jobs:
           npx cap add android
           npx cap sync android
 
-      - name: Build APK
-        run: cd android && ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
+            - name: Upload APK
+        uses: actions/upload-artifact@v4  # تم تغيير v3 إلى v4 هنا ✅
         with:
-          name: xhamster
+          name: app-debug
           path: android/app/build/outputs/apk/debug/xhamster.apk
