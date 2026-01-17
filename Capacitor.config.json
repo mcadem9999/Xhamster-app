@@ -1,0 +1,9 @@
+{
+  "appId": "com.xhamster.app",
+  "appName": "My App Name",
+  "webDir": "www",
+  "server": {
+    "url": "https://www.xhamster.com", 
+    "cleartext": true
+  }
+}
